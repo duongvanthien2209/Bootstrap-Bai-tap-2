@@ -8,6 +8,12 @@
     background-size: cover;
 }
 
+/* Methods */
+.methods {
+    padding: 50px 0;
+}
+/* End Of Methods */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -28,6 +34,56 @@
         border-right: 1px solid #e3e6f0;
         border-left: 1px solid #e3e6f0;
     }
+
+    /* Methods */
+    .methods {
+        position: relative;
+        padding: 50px 30px;
+        background-color: white;
+        box-shadow: 10px 5px 15px -15px #888;
+    }
+
+    .methods:after {
+        height: 100px;
+        width: 100%;
+        content: '';
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .methods::before {
+        position: absolute;
+        content: '';
+        right: 0;
+        height: 100%;
+        width: 5px;
+        top: 0;
+        background-color: #e3e3e3;
+    }
+
+    .methods .nav-link {
+        padding-left: 0;
+        color: #646f79;
+        font-size: 1rem;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .methods .nav-link:hover::after {
+        position: absolute;
+        content: '';
+        right: -30px;
+        height: 100%;
+        width: 5px;
+        background-color: #21c87a;
+    }
+
+    .methods .nav-link:hover {
+        color: #21c87a;
+    }
+    /* End Of Methods */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
