@@ -2,6 +2,12 @@
     color: #21c87a;
 }
 
+.component1 {
+    padding-top: 73px !important;
+    background-image: url('https://picsum.photos/300/200');
+    background-size: cover;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -16,7 +22,7 @@
 @media (min-width: 992px) {
     .navbar-custom {
         border-bottom: 1px solid #e3e6f0;
-        background-color: transparent  !important;
+        background-color: transparent !important;
     }
     .navbar-custom .collapse {
         border-right: 1px solid #e3e6f0;
